@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (value) {
   if (!(0, _lodash.isNil)(value) && value !== "") {
-    var temp = _moment2.default.unix(value).utc();
+    var temp = _moment2.default.unix(value);
     if (temp.isValid()) {
       value = temp.clone().format("MMM D, YYYY");
     }
