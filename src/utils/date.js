@@ -19,12 +19,13 @@ export default{
     ],
     true);
     // if the formatted date has no time, set it to the end of the day UTC
-    // so the resulting parsed epoch value will be within the same day anywhere in the US.
+    // so the resulting parsed epoch value will be within the same day anywhere in the US/Canada.
     if(strictDate.isValid()) {
       return strictDate.endOf("day");
     }
 
     // if the formatted date includes a time, it should be interpreted as local time
+    // then converted to UTC.
     return moment(date, [
       // date times
       "YYYY-MM-DD h:mm a",
@@ -36,6 +37,6 @@ export default{
       "MMM DD YYYY h:mm:ss a",
       "M-D-YYYY h:mm:ss a",
       "YYYY-MM-DD h:mm:ss a"
-    ]);
+    ]).utc();
   }
 };
