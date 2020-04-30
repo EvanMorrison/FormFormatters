@@ -1,7 +1,7 @@
 import Numeral from "numeral";
 import { isNil } from "lodash";
 
-export default function({errors, formatted: value, parsed}) {
+export default function({ errors, formatted: value, parsed }) {
   let formatted = value;
 
   if(!isNil(value) && value !== "") {

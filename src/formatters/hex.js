@@ -1,6 +1,6 @@
 import { isNil } from "lodash";
 
-export default function({errors, formatted, parsed}) {
+export default function({ errors, formatted, parsed }) {
   if(!isNil(formatted) && formatted !== "") {
     parsed = parsed.toString().toUpperCase().trim();
     formatted = formatted.toString().toUpperCase().trim();

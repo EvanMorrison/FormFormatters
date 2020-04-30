@@ -2,7 +2,7 @@ import test from "ava";
 import { StringFormatter } from "../../src";
 
 test("converts number", t => {
-  t.deepEqual(StringFormatter({errors: [], valid: true, formatted: 23, parsed: 23}), {
+  t.deepEqual(StringFormatter({ errors: [], valid: true, formatted: 23, parsed: 23 }), {
     errors: [],
     formatted: "23",
     parsed: "23",
@@ -11,7 +11,7 @@ test("converts number", t => {
 });
 
 test("trims white space", t => {
-  t.deepEqual(StringFormatter({errors: [], valid: true, formatted: " hi ", parsed: " hi "}), {
+  t.deepEqual(StringFormatter({ errors: [], valid: true, formatted: " hi ", parsed: " hi " }), {
     errors: [],
     formatted: "hi",
     parsed: "hi",
@@ -20,7 +20,7 @@ test("trims white space", t => {
 });
 
 test("does not return an error if empty string", t => {
-  t.deepEqual(StringFormatter({errors: [], valid: true, formatted: "", parsed: ""}), {
+  t.deepEqual(StringFormatter({ errors: [], valid: true, formatted: "", parsed: "" }), {
     errors: [],
     formatted: "",
     parsed: "",
@@ -29,7 +29,7 @@ test("does not return an error if empty string", t => {
 });
 
 test("accepts null", t => {
-  t.deepEqual(StringFormatter({errors: [], valid: true, formatted: null, parsed: null}), {
+  t.deepEqual(StringFormatter({ errors: [], valid: true, formatted: null, parsed: null }), {
     errors: [],
     formatted: null,
     parsed: null,

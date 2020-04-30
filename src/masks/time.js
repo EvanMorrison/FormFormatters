@@ -1,7 +1,3 @@
-const StringMask = {
-  mask(value) {
-    return(value);
-  }
-};
-
-module.exports = StringMask;
+export default function(value) {
+  return(value);
+}

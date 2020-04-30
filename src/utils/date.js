@@ -1,6 +1,6 @@
 import Moment from "moment";
 
-module.exports = {
+export default{
   parse(date) {
     return Moment.utc(date, [
       // dates

@@ -1,4 +1,4 @@
-module.exports = {
+export default{
   amexCreditCardInvalid: "invalid amex credit card number",
   creditCardInvalid: "invalid credit card number",
   dateInvalid: "invalid date",

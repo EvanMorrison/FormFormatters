@@ -1,7 +1,3 @@
-const ArrayMask = {
-  mask(value) {
-    return(value);
-  }
-};
-
-module.exports = ArrayMask;
+export default function(value) {
+  return(value);
+}

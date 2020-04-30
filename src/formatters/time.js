@@ -1,9 +1,9 @@
 import Moment from "moment";
 import { isNil } from "lodash";
 
-export default function({errors, formatted, parsed}) {
+export default function({ errors, formatted, parsed }) {
   if(!isNil(formatted) && formatted !== "") {
-    let temp = Moment(parsed, "hh:mm:ss a");
+    const temp = Moment(parsed, "hh:mm:ss a");
     if(temp.isValid()) {
       formatted = temp.format("h:mm a");
       parsed = formatted;
