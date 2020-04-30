@@ -4,6 +4,7 @@ module.exports = {
     "standard", "node", "import", "promise"
   ],
   "rules": {
+    "comma-dangle": ["error", "only-multiline"],
     "space-before-function-paren": ["error", "never"],
     "semi": ["error", "always"],
     "quotes": ["error", "double"],

@@ -1,14 +1,31 @@
-import Moment from "moment";
+import moment from "moment";
 
 export default{
   parse(date) {
-    return Moment.utc(date, [
-      // dates
+    const strictDate = moment.utc(date, [
+      // strict dates
+      "MMM D, YYYY",
+      "MMMM D, YYYY",
+      "MMM D, YY",
+      "MMMM D, YY",
+      "MMM D YYYY",
       "MMDDYYYY",
       "MMM YYYY",
       "MMM DD YYYY",
       "M-D-YYYY",
+      "M-D-YY",
       "YYYY-M-D",
+      "YY"
+    ],
+    true);
+    // if the formatted date has no time, set it to the end of the day UTC
+    // so the resulting parsed epoch value will be within the same day anywhere in the US.
+    if(strictDate.isValid()) {
+      return strictDate.endOf("day");
+    }
+
+    // if the formatted date includes a time, it should be interpreted as local time
+    return moment(date, [
       // date times
       "YYYY-MM-DD h:mm a",
       "MMM DD YYYY h:mm a",
