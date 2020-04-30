@@ -8,10 +8,10 @@ export default function ({
 
   if (!isNil(value) && value !== "") {
     const sanitized = value.toString().replace(/\D/g, "");
-    parsed = sanitized.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
     formatted = sanitized.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+    parsed = formatted;
 
-    if (parsed.length !== 12) {
+    if (parsed.length !== 14) {
       parsed = value;
       formatted = value;
       errors.push("FormFormatters.phoneInvalid");

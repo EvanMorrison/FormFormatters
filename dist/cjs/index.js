@@ -155,7 +155,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function (value) {
   if (!Object(lodash__WEBPACK_IMPORTED_MODULE_1__["isNil"])(value) && value !== "") {
-    var temp = moment__WEBPACK_IMPORTED_MODULE_0___default.a.unix(value).utc();
+    var temp = moment__WEBPACK_IMPORTED_MODULE_0___default.a.unix(value);
 
     if (temp.isValid()) {
       value = temp.clone().format("MMM D, YYYY");
@@ -763,10 +763,10 @@ __webpack_require__.r(__webpack_exports__);
 
   if (!Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) && value !== "") {
     var sanitized = value.toString().replace(/\D/g, "");
-    parsed = sanitized.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
     formatted = sanitized.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+    parsed = formatted;
 
-    if (parsed.length !== 12) {
+    if (parsed.length !== 14) {
       parsed = value;
       formatted = value;
       errors.push("FormFormatters.phoneInvalid");
@@ -1299,7 +1299,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mask: function mask(value) {
-    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.,]/g, "");
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.,-]/g, "");
   }
 });
 
