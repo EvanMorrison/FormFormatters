@@ -1266,8 +1266,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return value;
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return value;
+  }
 });
 
 /***/ }),
@@ -1284,8 +1286,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9-\s]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9-\s]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1302,8 +1306,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.,]/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.,]/g, "");
+  }
 });
 
 /***/ }),
@@ -1320,8 +1326,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,.]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,.]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1338,8 +1346,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().toLowerCase();
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().toLowerCase();
+  }
 });
 
 /***/ }),
@@ -1356,8 +1366,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().toUpperCase().replace(/[^#A-F0-9]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().toUpperCase().replace(/[^#A-F0-9]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1374,8 +1386,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,.]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,.]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1392,8 +1406,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.%]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9.%]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1410,8 +1426,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9()-\s]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9()-\s]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1428,8 +1446,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9()-\s]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9()-\s]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1446,8 +1466,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9-\s]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9-\s]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1464,8 +1486,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9]+/g, "");
+  }
 });
 
 /***/ }),
@@ -1479,8 +1503,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return value;
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return value;
+  }
 });
 
 /***/ }),
@@ -1494,8 +1520,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return value;
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return value;
+  }
 });
 
 /***/ }),
@@ -1512,8 +1540,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (value) {
-  return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,]+/g, "");
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mask: function mask(value) {
+    return Object(lodash__WEBPACK_IMPORTED_MODULE_0__["isNil"])(value) ? null : value.toString().replace(/[^0-9,]+/g, "");
+  }
 });
 
 /***/ }),

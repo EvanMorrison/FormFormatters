@@ -1,3 +1,6 @@
-export default function (value) {
-  return value;
-}
+export default {
+  mask(value) {
+    return value;
+  }
+
+};
