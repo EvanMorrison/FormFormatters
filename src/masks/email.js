@@ -1,5 +1,7 @@
 import { isNil } from "lodash";
 
-export default function(value) {
-  return(isNil(value) ? null : value.toString().toLowerCase());
-}
+export default {
+  mask(value) {
+    return(isNil(value) ? null : value.toString().toLowerCase());
+  }
+};

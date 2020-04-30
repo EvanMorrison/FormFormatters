@@ -37,7 +37,7 @@ test("formats cents", t => {
   });
 });
 
-test("formats cents", t => {
+test("formats cents 2", t => {
   t.deepEqual(CurrencyFormatter({ errors: [], valid: true, formatted: "5", parsed: "5" }), {
     errors: [],
     formatted: "5.00",
