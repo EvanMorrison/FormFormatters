@@ -1,9 +1,7 @@
 import { isNil } from "lodash";
 
-const HexMask = {
+export default{
   mask(value) {
     return(isNil(value) ? null : value.toString().toUpperCase().replace(/[^#A-F0-9]+/g, ""));
   }
 };
-
-module.exports = HexMask;

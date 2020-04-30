@@ -1,0 +1,26 @@
+import date from "../utils/date";
+import { isNil } from "lodash";
+export default function ({
+  errors,
+  formatted,
+  parsed
+}) {
+  if (!isNil(formatted) && formatted !== "") {
+    const temp = date.parse(parsed);
+
+    if (temp.isValid()) {
+      parsed = temp.format("YYYY-MM-DD");
+      formatted = temp.format("MMM YYYY");
+    } else {
+      errors.push("FormFormatters.dateInvalid");
+    }
+  }
+
+  return {
+    valid: errors.length === 0,
+    parsed,
+    formatted,
+    errors
+  };
+}
+;

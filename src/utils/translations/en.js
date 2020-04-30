@@ -1,5 +1,5 @@
 import Formatters from "../../formatters/en";
 
-module.exports = {
+export default{
   FormFormatters: Formatters
 };

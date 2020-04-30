@@ -22,7 +22,7 @@ test("converts and formats numbers", t => {
 });
 
 test("converts and formats number less than 1", t => {
-  t.deepEqual(CurrencyConverter(.25), "0.25");
+  t.deepEqual(CurrencyConverter(0.25), "0.25");
 });
 
 test("formats cents", t => {

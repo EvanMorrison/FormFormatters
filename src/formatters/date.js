@@ -1,9 +1,9 @@
 import date from "../utils/date";
 import { isNil } from "lodash";
 
-export default function({errors, formatted, parsed}) {
+export default function({ errors, formatted, parsed }) {
   if(!isNil(formatted) && formatted !== "") {
-    let temp = date.parse(formatted);
+    const temp = date.parse(formatted);
     if(temp.isValid()) {
       parsed = temp.clone().unix();
       formatted = temp.clone().format("MMM D, YYYY");

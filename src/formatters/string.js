@@ -1,6 +1,6 @@
 import { isNil, isNumber } from "lodash";
 
-export default function({errors, formatted, parsed}) {
+export default function({ errors, formatted, parsed }) {
   if(isNumber(formatted)) {
     formatted = formatted.toString();
   }

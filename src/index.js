@@ -1,73 +1,43 @@
-import ArrayFormatter from "./formatters/array";
-import CreditCardConverter from "./converters/creditCard";
-import CreditCardFormatter from "./formatters/creditCard";
-import CurrencyConverter from "./converters/currency";
-import CurrencyFormatter from "./formatters/currency";
-import DateConverter from "./converters/date";
-import DateFormatter from "./formatters/date";
-import EmailFormatter from "./formatters/email";
-import HexConverter from "./converters/hex";
-import HexFormatter from "./formatters/hex";
-import MonthYearFormatter from "./formatters/monthYear";
-import NameFormatter from "./formatters/name";
-import NumberFormatter from "./formatters/number";
-import PercentConverter from "./converters/percent";
-import PercentFormatter from "./formatters/percent";
-import PhoneConverter from "./converters/phone";
-import PhoneFormatter from "./formatters/phone";
-import PhoneStringConverter from "./converters/phoneString";
-import PhoneStringFormatter from "./formatters/phoneString";
-import RequiredFormatter from "./formatters/required";
-import RgbFormatter from "./formatters/rgb";
-import SsnConverter from "./converters/ssn";
-import SsnFormatter from "./formatters/ssn";
-import SsnLastFourFormatter from "./formatters/ssnLastFour";
-import StringFormatter from "./formatters/string";
-import TimeFormatter from "./formatters/time";
-import WholeNumberFormatter from "./formatters/whole";
-
-module.exports = {
-  ArrayFormatter: ArrayFormatter,
-  ArrayMask: require("./masks/array"),
-  CreditCardConverter: CreditCardConverter,
-  CreditCardFormatter: CreditCardFormatter,
-  CreditCardMask: require("./masks/creditCard"),
-  CurrencyConverter: CurrencyConverter,
-  CurrencyFormatter: CurrencyFormatter,
-  CurrencyMask: require("./masks/currency"),
-  DecimalMask: require("./masks/decimal"),
-  DateConverter: DateConverter,
-  DateFormatter: DateFormatter,
-  EmailFormatter: EmailFormatter,
-  EmailMask: require("./masks/email"),
-  EnglishTranslation: require("./utils/translations/en"),
-  HexConverter: HexConverter,
-  HexFormatter: HexFormatter,
-  HexMask: require("./masks/hex"),
-  MonthYearFormatter: MonthYearFormatter,
-  NameFormatter: NameFormatter,
-  NumberFormatter: NumberFormatter,
-  NumberMask: require("./masks/number"),
-  PercentConverter: PercentConverter,
-  PercentFormatter: PercentFormatter,
-  PercentMask: require("./masks/percent"),
-  PhoneConverter: PhoneConverter,
-  PhoneFormatter: PhoneFormatter,
-  PhoneMask: require("./masks/phone"),
-  PhoneStringConverter: PhoneStringConverter,
-  PhoneStringFormatter: PhoneStringFormatter,
-  PhoneStringMask: require("./masks/phoneString"),
-  RequiredFormatter: RequiredFormatter,
-  RgbFormatter: RgbFormatter,
-  SsnConverter: SsnConverter,
-  SsnFormatter: SsnFormatter,
-  SsnMask: require("./masks/ssn"),
-  SsnLastFourFormatter: SsnLastFourFormatter,
-  SsnLastFourMask: require("./masks/ssnLastFour"),
-  StringFormatter: StringFormatter,
-  StringMask: require("./masks/string"),
-  TimeFormatter: TimeFormatter,
-  TimeMask: require("./masks/time"),
-  WholeNumberFormatter: WholeNumberFormatter,
-  WholeNumberMask: require("./masks/wholeNumber")
-};
+export{ default as ArrayFormatter } from "./formatters/array";
+export{ default as ArrayMask } from "./masks/array";
+export{ default as CreditCardConverter } from "./converters/creditCard";
+export{ default as CreditCardFormatter } from "./formatters/creditCard";
+export{ default as CreditCardMask } from "./masks/creditCard";
+export{ default as CurrencyConverter } from "./converters/currency";
+export{ default as CurrencyFormatter } from "./formatters/currency";
+export{ default as CurrencyMask } from "./masks/currency";
+export{ default as DateConverter } from "./converters/date";
+export{ default as DateFormatter } from "./formatters/date";
+export{ default as DecimalMask } from "./masks/decimal";
+export{ default as EmailFormatter } from "./formatters/email";
+export{ default as EmailMask } from "./masks/email";
+export{ default as EnglishTranslation } from "./utils/translations/en";
+export{ default as HexConverter } from "./converters/hex";
+export{ default as HexFormatter } from "./formatters/hex";
+export{ default as HexMask } from "./masks/hex";
+export{ default as MonthYearFormatter } from "./formatters/monthYear";
+export{ default as NameFormatter } from "./formatters/name";
+export{ default as NumberFormatter } from "./formatters/number";
+export{ default as NumberMask } from "./masks/number";
+export{ default as PercentConverter } from "./converters/percent";
+export{ default as PercentFormatter } from "./formatters/percent";
+export{ default as PercentMask } from "./masks/percent";
+export{ default as PhoneConverter } from "./converters/phone";
+export{ default as PhoneFormatter } from "./formatters/phone";
+export{ default as PhoneMask } from "./masks/phone";
+export{ default as PhoneStringConverter } from "./converters/phoneString";
+export{ default as PhoneStringFormatter } from "./formatters/phoneString";
+export{ default as PhoneStringMask } from "./masks/phoneString";
+export{ default as RequiredFormatter } from "./formatters/required";
+export{ default as RgbFormatter } from "./formatters/rgb";
+export{ default as SsnConverter } from "./converters/ssn";
+export{ default as SsnFormatter } from "./formatters/ssn";
+export{ default as SsnMask } from "./masks/ssn";
+export{ default as SsnLastFourFormatter } from "./formatters/ssnLastFour";
+export{ default as SsnLastFourMask } from "./masks/ssnLastFour";
+export{ default as StringFormatter } from "./formatters/string";
+export{ default as StringMask } from "./masks/string";
+export{ default as TimeFormatter } from "./formatters/time";
+export{ default as TimeMask } from "./masks/time";
+export{ default as WholeNumberFormatter } from "./formatters/whole";
+export{ default as WholeNumberMask } from "./masks/wholeNumber";

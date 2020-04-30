@@ -1,7 +1,5 @@
-const StringMask = {
+export default{
   mask(value) {
     return(value);
   }
 };
-
-module.exports = StringMask;

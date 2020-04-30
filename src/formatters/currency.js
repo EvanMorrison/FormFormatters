@@ -1,11 +1,11 @@
 import Numeral from "numeral";
 import { isEmpty, isNil } from "lodash";
 
-export default function({errors, formatted: value, parsed}) {
+export default function({ errors, formatted: value, parsed }) {
   let formatted = value;
 
   if(!isNil(value) && !isEmpty(value)) {
-    let numObj = Numeral(parsed.replace(/[$\s,]/g, "").trim());
+    const numObj = Numeral(parsed.replace(/[$\s,]/g, "").trim());
     parsed = numObj.value();
     if(typeof(parsed) === "undefined" || parsed === null || isNaN(parsed)) {
       parsed = value;
